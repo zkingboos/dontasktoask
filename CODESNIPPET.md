@@ -11,12 +11,16 @@ _Exemplo:_
 
 **usuário anônimo** meu código não funciona e eu não sei porque
   ```java
-  final Gamer gamer = GamerRegistry.get(player);
-  double coins = gamer.getCoins();
+  public onCommand(CommandSender sender, Command command, String label, String[] args){
+    Player player = (Player) sender;
 
-  gamer.sendMessage("Seus coins: %s", coins); 
+    final Gamer gamer = GamerRegistry.get(player);
+    double coins = gamer.getCoins();
+
+    gamer.sendMessage("Seus coins: %s", coins); 
+  }
   ```
-**zkingboos** o quê o player é? O quê `GamerRegistry.get(player)` faz? Os coins estão sendo retornados de maneira correta? Ele está salvo nesse registro?
+**zkingboos** O que `GamerRegistry.get(player)` faz? Os coins estão sendo retornados da maneira correta? Ele está salvo nesse registro?
 
 <br/>
 
@@ -29,19 +33,26 @@ _Exemplo:_
     private double coins;
   }
   ```
-  a classe onde eu obtenho todos os dados que preciso:
+a classe onde eu obtenho todos os dados que preciso:
   ```java
   public class GamerDAO {
       //some code..
   }
   ```
-  porém fiz um código e não funcionou, queria saber qual pode ser a causa disso.
+porém fiz um código e não funcionou, queria saber qual pode ser a causa disso.
   ```java
-  final Gamer gamer = GamerRegistry.get(player);
-  double coins = gamer.getCoins();
+  public onCommand(CommandSender sender, Command command, String label, String[] args){
+    Player player = (Player) sender;
 
-  gamer.sendMessage("Seus coins: %s", coins); 
+    final Gamer gamer = GamerRegistry.get(player);
+    double coins = gamer.getCoins(); //coins = 0
+
+    gamer.sendMessage("Seus coins: %s", coins); 
+  }
   ```
+Já testei anteriormente, o jogador realmente existe dentro do registro mas os coins estão retornando 0 mesmo que eu defina eles pra algum valor
+
+<br/>
 
 Nunca tenha medo de perguntar sobre algo, pois ninguém nunca nasceu sabendo.
 
