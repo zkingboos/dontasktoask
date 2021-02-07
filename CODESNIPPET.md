@@ -29,6 +29,12 @@ _Exemplo:_
     private double coins;
   }
   ```
+  a classe onde eu obtenho todos os dados que preciso:
+  ```java
+  public class GamerDAO {
+      //some code..
+  }
+  ```
   porém fiz um código e não funcionou, queria saber qual pode ser a causa disso.
   ```java
   final Gamer gamer = GamerRegistry.get(player);
@@ -36,7 +42,8 @@ _Exemplo:_
 
   gamer.sendMessage("Seus coins: %s", coins); 
   ```
-...
+
+Nunca tenha medo de perguntar sobre algo, pois ninguém nunca nasceu sabendo.
 
 [dontasktoask]: https://dontasktoask.com
 [xyproblem]: https://xyproblem.info/
