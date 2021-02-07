@@ -1,5 +1,3 @@
-# DONT ASK TO ASK
-
 > Primeiramente de tudo, veja [dontasktoask] e [xyproblem] para entender um pouco mais.
 
 ### Trechos de código
