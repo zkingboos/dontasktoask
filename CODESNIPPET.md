@@ -39,7 +39,7 @@ a classe onde eu obtenho todos os dados que preciso:
       //some code..
   }
   ```
-porém fiz um código e não funcionou, queria saber qual pode ser a causa disso.
+porém fiz esse código e não funcionou, queria saber qual pode ser a causa disso.
   ```java
   public onCommand(CommandSender sender, Command command, String label, String[] args){
     Player player = (Player) sender;
