@@ -22,7 +22,7 @@ _Exemplo:_
 
 <br/>
 
-> Ao invés de mandar apenas o trecho código, você pode declarar mais especiamente sobre o quê é:
+> Ao invés de mandar apenas o trecho código, você pode declarar mais especificamente sobre o que é:
 
 **usuário anônimo** Eu tenho uma classe de registro chamado GamerRegistry, onde contém todos os jogadores salvos no cache que são salvos quando entram no servidor, todos os dados deles são obtidos atráves do banco de dados. A estrutura da classe Gamer é essa:
   ```java
